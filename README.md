@@ -44,7 +44,7 @@ Modern, responsive ve kullanıcı dostu iş yönetim sistemleri web sitesi. Reac
 
 1. **Projeyi klonlayın**
 ```bash
-git clone https://github.com/caglayanfaruk/needscloud.git
+git clone https://github.com/caglayanfaruk/website_needscloud.com.git
 cd needscloud
 ```
 
