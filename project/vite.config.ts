@@ -11,5 +11,6 @@ export default defineConfig({
     host: '0.0.0.0',
     port: 5173,
     allowedHosts: ['needscloud.com', 'www.needscloud.com'],
+    https: true,
   },
 });
