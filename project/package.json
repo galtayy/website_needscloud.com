@@ -5,7 +5,8 @@
   "description": "Modern iş yönetim çözümleri - WMS, E-Dönüşüm ve TanaBanka",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "start": "vite",
+    "dev": "vite --host",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"
