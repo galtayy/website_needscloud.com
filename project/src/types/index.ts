@@ -46,14 +46,7 @@ export interface DemoRequest {
 
 export interface ContactInfo {
   email: string;
-  phone: string;
   address: string;
-  socialLinks: {
-    facebook: string;
-    twitter: string;
-    linkedin: string;
-    instagram: string;
-  };
 }
 
 export interface SMTPConfig {

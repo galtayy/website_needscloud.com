@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import { useParams } from 'react-router-dom';
+// import { useParams } from 'react-router-dom';
 import { Home, Monitor, Star, Package, Play, Check, X } from 'lucide-react';
 import { products } from '../data/products';
 import * as LucideIcons from 'lucide-react';
 
 export const ProductDetailPage: React.FC = () => {
-  const { slug } = useParams<{ slug: string }>();
+  // const { slug } = useParams<{ slug: string }>();
   const product = products.find(p => p.slug === 'wms-depo-yonetim-sistemi'); // WMS ürününü direkt al
   const [currentScreen, setCurrentScreen] = useState(0);
   const [activeSection, setActiveSection] = useState('home');
@@ -202,7 +202,7 @@ export const ProductDetailPage: React.FC = () => {
             <h2 className="text-4xl font-bold text-center text-gray-900 mb-16">Özellikler</h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               {product.features?.map((feature, index) => {
-                const IconComponent = (LucideIcons as any)[feature.icon];
+                const IconComponent = (LucideIcons as Record<string, React.ComponentType>)[feature.icon];
                 return (
                   <div
                     key={index}

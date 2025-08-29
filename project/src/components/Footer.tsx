@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Mail, Phone, MapPin, Facebook, Twitter, Linkedin, Instagram } from 'lucide-react';
+import { Mail, MapPin } from 'lucide-react';
 import { contactInfo } from '../data/contact';
 
 export const Footer: React.FC = () => {
@@ -17,24 +17,6 @@ export const Footer: React.FC = () => {
               Modern iş yönetim çözümleri ile işletmenizin dijital dönüşümünü 
               tamamlayın. Depo yönetiminden e-dönüşüme, entegre çözümler.
             </p>
-            <div className="flex gap-4">
-              <a href={contactInfo.socialLinks.facebook} target="_blank" rel="noopener noreferrer" 
-                 className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-blue-600 transition-colors">
-                <Facebook className="w-5 h-5" />
-              </a>
-              <a href={contactInfo.socialLinks.twitter} target="_blank" rel="noopener noreferrer"
-                 className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-blue-400 transition-colors">
-                <Twitter className="w-5 h-5" />
-              </a>
-              <a href={contactInfo.socialLinks.linkedin} target="_blank" rel="noopener noreferrer"
-                 className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-blue-600 transition-colors">
-                <Linkedin className="w-5 h-5" />
-              </a>
-              <a href={contactInfo.socialLinks.instagram} target="_blank" rel="noopener noreferrer"
-                 className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-pink-500 transition-colors">
-                <Instagram className="w-5 h-5" />
-              </a>
-            </div>
           </div>
 
           {/* Quick Links */}
@@ -88,10 +70,6 @@ export const Footer: React.FC = () => {
               <div className="flex items-center gap-3">
                 <Mail className="w-5 h-5 text-blue-400 flex-shrink-0" />
                 <span className="text-gray-300">{contactInfo.email}</span>
-              </div>
-              <div className="flex items-center gap-3">
-                <Phone className="w-5 h-5 text-blue-400 flex-shrink-0" />
-                <span className="text-gray-300">{contactInfo.phone}</span>
               </div>
               <div className="flex items-center gap-3">
                 <MapPin className="w-5 h-5 text-blue-400 flex-shrink-0" />

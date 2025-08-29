@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Play, Mail, Phone, Facebook, Twitter, Linkedin, Instagram, ChevronDown } from 'lucide-react';
+import { Menu, X, Play, Mail, ChevronDown } from 'lucide-react';
 import { contactInfo } from '../data/contact';
 
 export const Header: React.FC = () => {
@@ -47,28 +47,6 @@ export const Header: React.FC = () => {
                 <Mail className="w-4 h-4" />
                 <span>{contactInfo.email}</span>
               </div>
-              <div className="flex items-center gap-2">
-                <Phone className="w-4 h-4" />
-                <span>{contactInfo.phone}</span>
-              </div>
-            </div>
-            <div className="hidden md:flex items-center gap-4">
-              <a href={contactInfo.socialLinks.facebook} target="_blank" rel="noopener noreferrer" 
-                 className="hover:text-blue-400 transition-colors">
-                <Facebook className="w-4 h-4" />
-              </a>
-              <a href={contactInfo.socialLinks.twitter} target="_blank" rel="noopener noreferrer"
-                 className="hover:text-blue-400 transition-colors">
-                <Twitter className="w-4 h-4" />
-              </a>
-              <a href={contactInfo.socialLinks.linkedin} target="_blank" rel="noopener noreferrer"
-                 className="hover:text-blue-400 transition-colors">
-                <Linkedin className="w-4 h-4" />
-              </a>
-              <a href={contactInfo.socialLinks.instagram} target="_blank" rel="noopener noreferrer"
-                 className="hover:text-pink-400 transition-colors">
-                <Instagram className="w-4 h-4" />
-              </a>
             </div>
           </div>
         </div>

@@ -1,5 +1,5 @@
 import { useCallback } from 'react';
-import { CheckCircle, XCircle, AlertCircle, Info, X } from 'lucide-react';
+// import { CheckCircle, XCircle, AlertCircle, Info } from 'lucide-react';
 
 type NotificationType = 'success' | 'error' | 'warning' | 'info';
 
@@ -22,14 +22,14 @@ export const useNotification = () => {
     const notification = document.createElement('div');
     notification.className = `notification notification-${type}`;
 
-    const iconMap = {
-      success: CheckCircle,
-      error: XCircle,
-      warning: AlertCircle,
-      info: Info
-    };
+    // const iconMap = {
+    //   success: CheckCircle,
+    //   error: XCircle,
+    //   warning: AlertCircle,
+    //   info: Info
+    // };
 
-    const IconComponent = iconMap[type];
+    // const IconComponent = iconMap[type];
     
     notification.innerHTML = `
       <div class="flex items-start gap-3 p-4">

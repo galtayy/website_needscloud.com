@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Home, Monitor, Star, Package, Play, ArrowRight, CreditCard, Download, RefreshCw, CheckCircle, TrendingUp, FileText, Building2, DollarSign, Clock, Shield } from 'lucide-react';
+import { Home, Monitor, Star, Package, Play, ArrowRight, CreditCard, CheckCircle, TrendingUp, FileText, Building2, DollarSign, Clock, Shield } from 'lucide-react';
 import { tanabankaScreenshots, tanabankaFeatures } from '../data/products';
 import * as LucideIcons from 'lucide-react';
 
@@ -200,7 +200,7 @@ export const TanabankaDetailPage: React.FC = () => {
             <h2 className="text-4xl font-bold text-center text-gray-900 mb-16">Özellikler</h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               {tanabankaFeatures.map((feature, index) => {
-                const IconComponent = (LucideIcons as any)[feature.icon];
+                const IconComponent = (LucideIcons as Record<string, React.ComponentType>)[feature.icon];
                 return (
                   <div
                     key={index}

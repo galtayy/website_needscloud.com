@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Mail, Phone, MapPin, Clock, Send, Loader2 } from 'lucide-react';
+import { Mail, MapPin, Clock, Send, Loader2 } from 'lucide-react';
 import { contactInfo } from '../data/contact';
 import { useNotification } from '../hooks/useNotification';
 
@@ -78,7 +78,7 @@ export const ContactPage: React.FC = () => {
       {/* Contact Info */}
       <section className="section-padding bg-white">
         <div className="max-w-7xl mx-auto container-padding">
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
             <div className="text-center animate-fade-in">
               <div className="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center mx-auto mb-6">
                 <Mail className="w-8 h-8 text-blue-600" />
@@ -87,15 +87,8 @@ export const ContactPage: React.FC = () => {
               <p className="text-gray-600">{contactInfo.email}</p>
             </div>
 
-            <div className="text-center animate-fade-in" style={{ animationDelay: '0.1s' }}>
-              <div className="w-16 h-16 bg-green-100 rounded-2xl flex items-center justify-center mx-auto mb-6">
-                <Phone className="w-8 h-8 text-green-600" />
-              </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">Telefon</h3>
-              <p className="text-gray-600">{contactInfo.phone}</p>
-            </div>
 
-            <div className="text-center animate-fade-in" style={{ animationDelay: '0.2s' }}>
+            <div className="text-center animate-fade-in" style={{ animationDelay: '0.1s' }}>
               <div className="w-16 h-16 bg-purple-100 rounded-2xl flex items-center justify-center mx-auto mb-6">
                 <MapPin className="w-8 h-8 text-purple-600" />
               </div>
@@ -103,7 +96,7 @@ export const ContactPage: React.FC = () => {
               <p className="text-gray-600">{contactInfo.address}</p>
             </div>
 
-            <div className="text-center animate-fade-in" style={{ animationDelay: '0.3s' }}>
+            <div className="text-center animate-fade-in" style={{ animationDelay: '0.2s' }}>
               <div className="w-16 h-16 bg-orange-100 rounded-2xl flex items-center justify-center mx-auto mb-6">
                 <Clock className="w-8 h-8 text-orange-600" />
               </div>
@@ -254,16 +247,6 @@ export const ContactPage: React.FC = () => {
         </div>
       </section>
 
-      {/* Map Section - Placeholder */}
-      <section className="bg-gray-100 h-96">
-        <div className="h-full flex items-center justify-center">
-          <div className="text-center">
-            <MapPin className="w-16 h-16 text-gray-400 mx-auto mb-4" />
-            <h3 className="text-xl font-semibold text-gray-600 mb-2">Harita</h3>
-            <p className="text-gray-500">Ofisimizin konumu</p>
-          </div>
-        </div>
-      </section>
     </div>
   );
 };

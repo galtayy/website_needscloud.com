@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowRight, BarChart3, Shield, Zap, Users, TrendingUp, Headphones, Play, Star, FileText, CreditCard, Layers } from 'lucide-react';
+import { ArrowRight, BarChart3, Shield, Zap, Users, TrendingUp, Headphones, Play, FileText, CreditCard } from 'lucide-react';
 
 export const HomePage: React.FC = () => {
   const handleDemoClick = () => {
